@@ -1,70 +1,65 @@
 <!DOCTYPE html>
-<html lang="it">
+<html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MyCo</title>
 
 <style>
-html, body {
-    margin: 0;
-    padding: 0;
-    background: #000;
+body{
+    margin:0;
+    background:#000;
+    display:flex;
+    justify-content:center;
 }
 
-.container {
-    position: relative;
-    width: 100%;
-    max-width: 430px;
-    margin: 0 auto;
+.wrapper{
+    position:relative;
+    width:min(100vw,430px);
 }
 
-.container img {
-    width: 100%;
-    display: block;
+.wrapper img{
+    width:100%;
+    display:block;
 }
 
-/* Play Store */
+/* PLAY STORE */
 
-.playstore {
-    position: absolute;
-    left: 6%;
-    top: 62%;
-    width: 42%;
-    height: 6%;
-    z-index: 10;
+.play{
+    position:absolute;
+    left:8%;
+    top:56%;
+    width:38%;
+    height:5%;
+    z-index:100;
 }
 
-/* App Store */
+/* APP STORE */
 
-.appstore {
-    position: absolute;
-    left: 52%;
-    top: 62%;
-    width: 42%;
-    height: 6%;
-    z-index: 10;
+.app{
+    position:absolute;
+    left:54%;
+    top:56%;
+    width:38%;
+    height:5%;
+    z-index:100;
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="wrapper">
 
-    <img src="landing-download-app.jpg" alt="MyCo">
+<img src="landing-download-app.jpg">
 
-    <a class="playstore"
-       href="https://play.google.com/"
-       target="_blank"
-       aria-label="Play Store">
-    </a>
+<a class="play"
+href="https://play.google.com/"
+target="_blank"></a>
 
-    <a class="appstore"
-       href="https://apps.apple.com/"
-       target="_blank"
-       aria-label="App Store">
-    </a>
+<a class="app"
+href="https://apps.apple.com/"
+target="_blank"></a>
 
 </div>
 
