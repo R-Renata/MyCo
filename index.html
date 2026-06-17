@@ -10,14 +10,13 @@ html, body {
     margin: 0;
     padding: 0;
     background: #000;
-    overflow: hidden;
 }
 
 .container {
     position: relative;
-    width: 100vw;
+    width: 100%;
     max-width: 430px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .container img {
@@ -25,24 +24,26 @@ html, body {
     display: block;
 }
 
-/* PLAY STORE */
+/* Play Store */
 
 .playstore {
     position: absolute;
     left: 6%;
-    top: 63%;
+    top: 62%;
     width: 42%;
     height: 6%;
+    z-index: 10;
 }
 
-/* APP STORE */
+/* App Store */
 
 .appstore {
     position: absolute;
     left: 52%;
-    top: 63%;
+    top: 62%;
     width: 42%;
     height: 6%;
+    z-index: 10;
 }
 </style>
 </head>
@@ -51,17 +52,19 @@ html, body {
 
 <div class="container">
 
-<img src="landing.jpg" alt="MyCo">
+    <img src="landing-download-app.jpg" alt="MyCo">
 
-<a class="playstore"
-   href="https://play.google.com/"
-   target="_blank">
-</a>
+    <a class="playstore"
+       href="https://play.google.com/"
+       target="_blank"
+       aria-label="Play Store">
+    </a>
 
-<a class="appstore"
-   href="https://apps.apple.com/"
-   target="_blank">
-</a>
+    <a class="appstore"
+       href="https://apps.apple.com/"
+       target="_blank"
+       aria-label="App Store">
+    </a>
 
 </div>
 
